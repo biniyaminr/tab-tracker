@@ -9,9 +9,9 @@ app.use(bodyParse.json())
 app.use(cors())
 
 //end point
-app.get('/status',  (req, res) =>{
+app.post('/register',  (req, res) =>{
     res.send({
-        message: 'hello benj from server'
+        message: `Hello ${req.body.email } !you are registered!have fun!`
     })
 })
 
